@@ -34,7 +34,7 @@ const server = http.createServer( (req, res) => {
             }
          })
          res.writeHead(200, { 'Content-Type' : 'text/html; charset=utf-8' });
-         res.write(`Пользователь ${username} имеет привилегию ${foundGroup}<br><a href="/">Back</a>`);
+         res.write(`Пользователь ${username} имеет привилегию ${foundGroup}<br><a href="/">Назад</a>`);
          return res.end();
       }
    } else {
