@@ -16,7 +16,7 @@ const server = http.createServer( (req, res) => {
 
       if(info.length === 0) {
          res.writeHead(200, { 'Content-Type' : 'text/html; charset=utf-8' });
-         res.write(`Пользователя ${username} нет<br><a href="/">Back</a>`);
+         res.write(`Пользователя ${username} нет<br><a href="/">Назад</a>`);
          return res.end();
       } else {
          let foundGroup;
